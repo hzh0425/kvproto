@@ -689,9 +689,10 @@ message SplitAndScatterRegionsRequest {
 
 message SplitAndScatterRegionsResponse {
     ResponseHeader header = 1;
-    uint64 split_finished_percentage = 2;
-    uint64 scatter_finished_percentage = 3;
-    repeated uint64 regions_id = 4;
+    repeated uint64 regions_id = 2;
+    uint64 split_finished_percentage = 3;
+    uint64 scatter_finished_percentage = 4;
+    uint64 finish_scatter_num = 5;
 }
 
 message GetDCLocationInfoRequest {
